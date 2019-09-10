@@ -15,7 +15,7 @@ sub selSort{
 
     }
     if ($i!=$min){
-      @list[$i,$min]=@list[$min,$i];
+      @list[$i,$min]=@list[$min,$i];# swap i to min and min to i
     }
     #print "$i\n";
   }

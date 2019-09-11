@@ -11,3 +11,18 @@ $$xr=$$xr*2;
 print "$x\n";
 print "$$xr\n";
 print "$xr\n";
+
+
+my @a=(1..5);
+my $ar= \@a;
+=for comment
+foreach $a (@$ar) {
+  print "$a\n"
+
+}
+=cut
+my $i=0;
+for (@$ar) {
+  print "$ar->[$i++]\n"
+
+}
